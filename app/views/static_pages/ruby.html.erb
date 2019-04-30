@@ -1,0 +1,60 @@
+<% provide(:title, "ruby") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> BOOTCAMP Hogaru | Exam 1 Problem 1</title>
+  </head>
+  <body>
+    <h1>ruby</h1>
+    <p>
+Interpolación de strings
+
+Se debe asignar un nombre (“nombrevariable” a una variable, luego se interpola así: “#{nombrevariable} stringainterpolar” y el resultado sería: nombrevariable stringainterpolar.
+
+¿Cómo se declara un array y cómo se adiciona un elemento al final del array?
+
+Usando el método split, se adiciona con el método push o con el operador equivalente <<
+
+¿Cómo se itera un array utilizando el comando each?
+Se deben separar el rango de variables a las cuales se le quiera hacer la misma operación. donde el bloque | | aisla cada variable para realizar la operación deseada con cada uno.
+Forma 1: 
+(1..5).each { |i| puts 2 * i }
+Forma 2:
+(1..5).each do |i| 
+puts 2 * i
+end
+Forma 3:
+(1..5).each do |number| 
+puts 2 * number
+end
+
+
+¿Cómo se declara un hash? 
+
+Hash son arreglos que no están limitados por índices enteros. Un hash se declara de la siguiente forma:
+user = {} 
+
+¿Cómo se itera un hash utilizando el comando each?
+
+Se debe declarar el hash con las opciones de iteración luego se declara así:
+
+user.each do |key, value|
+
+¿Qué es un block en ruby? De un ejemplo de cómo utilizarlo
+
+Es una casilla en la cual se puede operar variables una por una de acuerdo a una operación que el programador desee. Se utiliza de la siguiente manera:
+(1..5).each { |i| puts 2 * i} 
+Lo que realiza el bloque es coger cada numero del 1 al 5 y multiplicarlo por 2.
+
+¿Cuál es la convención en Ruby a la hora de nombrar variables?
+
+@nombredelavariable
+
+¿Qué son attr_reader, attr_writer y attr_accesor? ¿Para qué sirven?
+
+Son atributos para la función de las variables.
+
+
+    </p>
+  </body>
+</html>
